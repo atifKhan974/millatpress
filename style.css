@@ -1,0 +1,85 @@
+.myCol {
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+
+.myCol:hover {
+    box-shadow: 0px 0px 5px black;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+}
+
+.myImg {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.myImg:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+#upArrow {
+    background-color: #212529;
+    color: white;
+    border-radius: 50%;
+    padding: 20px 10px;
+    /* font-size: 25px; */
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgb(61, 60, 60);
+    position: fixed;
+    z-index: 9;
+    bottom: 20px;
+    right: 28px;
+    display: none;
+    transition: all 0.7s;
+    animation: anim 1s alternate infinite;
+}
+
+#whatsApp {
+    background-color: #51d05f;
+    /* color: white; */
+    border: none;
+    border-radius: 50%;
+    /* padding: 20px 10px; */
+    padding: 5px;
+    /* font-size: 25px; */
+    font-weight: bolder;
+    cursor: pointer;
+    /* box-shadow: 1px 1px 8px rgb(61, 60, 60); */
+    position: fixed;
+    z-index: 9;
+    bottom: 88px;
+    right: 20px;
+    transition: all 0.7s;
+    display: none;
+}
+
+
+@keyframes anim {
+    from {
+        bottom: 20px;
+    }
+
+    to {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width=500px) {
+    #heroImg {
+        position: relative;
+        top: 100px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+}
